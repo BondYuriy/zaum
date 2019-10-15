@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap");
+
+/* Colors */
+
+/* Fonts */
+
+/*text*/
+
+/*------- margin-top ---------*/
+
+.mt-30 {
+	margin-top: 30px;
+}
+
+.mt-90 {
+	margin-top: 90px;
+}
+
+.mt-140 {
+	margin-top: 140px;
+}
+
+/*------- margin-bottom ---------*/
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.mb-30 {
+	margin-bottom: 30px;
+}
+
+.mb-35 {
+	margin-bottom: 35px;
+}
+
+.mb-40 {
+	margin-bottom: 40px;
+}
+
+.mb-50 {
+	margin-bottom: 50px;
+}
+
+.mb-60 {
+	margin-bottom: 60px;
+}
+
+.mb-70 {
+	margin-bottom: 70px;
+}
+
+.mb-90 {
+	margin-bottom: 90px;
+}
+
+.mb-100 {
+	margin-bottom: 100px;
+}
+
+.mb-140 {
+	margin-bottom: 140px;
+}
+
+/*------- margin-left ---------*/
+
+/*------- margin-right ---------*/
+
+.mr-15 {
+	margin-right: 15px;
+}
+
+/*------- paddind-top ---------*/
+
+.pt-50 {
+	padding-top: 50px;
+}
+
+/*=== basic ===*/
+
+* :not(svg) {
+	transition: 0.5s;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #231f20;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+main {
+	flex-grow: 1;
+}
+
+footer {
+	flex-grow: 0;
+}
+
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+button:focus {
+	outline: none;
+}
+
+/*=== btn style FF===*/
+
+.btn {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+}
+
+.btn:focus {
+	box-shadow: none;
+}
+
+.header-wrapper {
+	height: 60px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+	position: relative;
+	z-index: 1;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+}
+
+.header .logo {
+	margin-right: 230px;
+}
+
+.header .logo p {
+	margin: 0;
+	font-size: 40px;
+	font-weight: 900;
+	color: #52ae32;
+}
+
+.header .slogan {
+	margin: 0;
+	font-size: 24px;
+	font-weight: 700;
+	color: #706f6f;
+}
+
+/*=== footer ===*/
+
+/* calculator */
+
+.calculator-box {
+	height: 500px;
+	background-image: url("../img/3c3d6567d661043f78488a01119a9d9b.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.calculator-box::before {
+	display: block;
+	content: "";
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.3), white);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.calculator-content {
+	width: 70%;
+	background-color: #fff;
+	margin: 140px auto 0 auto;
+	padding: 30px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.calculator-content .calculator-slider-price,
+.calculator-content .calculator-slider-day {
+	position: relative;
+}
+
+.calculator-content .calculator-slider-price .calculator-slider-info,
+.calculator-content .calculator-slider-day .calculator-slider-info {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	color: #7b7373;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.calculator-content .calculator-slider-price .calculator-slider-info .min-price,
+.calculator-content .calculator-slider-price .calculator-slider-info .max-price,
+.calculator-content .calculator-slider-price .calculator-slider-info .min-day,
+.calculator-content .calculator-slider-price .calculator-slider-info .max-day,
+.calculator-content .calculator-slider-day .calculator-slider-info .min-price,
+.calculator-content .calculator-slider-day .calculator-slider-info .max-price,
+.calculator-content .calculator-slider-day .calculator-slider-info .min-day,
+.calculator-content .calculator-slider-day .calculator-slider-info .max-day {
+	position: absolute;
+	bottom: -2px;
+	font-size: 15px;
+	line-height: 14px;
+	color: #ffad00;
+	font-weight: 700;
+}
+
+.calculator-content .calculator-slider-price .calculator-slider-info .min-price,
+.calculator-content .calculator-slider-price .calculator-slider-info .min-day,
+.calculator-content .calculator-slider-day .calculator-slider-info .min-price,
+.calculator-content .calculator-slider-day .calculator-slider-info .min-day {
+	left: 0;
+}
+
+.calculator-content .calculator-slider-price .calculator-slider-info .max-price,
+.calculator-content .calculator-slider-price .calculator-slider-info .max-day,
+.calculator-content .calculator-slider-day .calculator-slider-info .max-price,
+.calculator-content .calculator-slider-day .calculator-slider-info .max-day {
+	right: 0;
+}
+
+.calculator-content .calculator-slider-price .calculator-slider-info label,
+.calculator-content .calculator-slider-day .calculator-slider-info label {
+	margin: 0;
+	display: block;
+}
+
+.calculator-content .calculator-slider-price .calculator-slider-info input,
+.calculator-content .calculator-slider-day .calculator-slider-info input {
+	border: 0;
+	width: 100px;
+	height: 36px;
+	color: #ffad00;
+	font-size: 30px;
+	font-weight: 900;
+	text-transform: uppercase;
+	background-color: rgba(0, 0, 0, 0);
+	line-height: normal;
+	text-align: center;
+}
+
+.calculator-content .calculator-slider-price .calculator-slider-info input:focus,
+.calculator-content .calculator-slider-day .calculator-slider-info input:focus {
+	outline: none;
+}
+
+.calculator-content .calculator-slider-price .calculator-slider-info span,
+.calculator-content .calculator-slider-day .calculator-slider-info span {
+	width: 40px;
+}
+
+.calculator-content .slider-scroll {
+	border: 0;
+	border-radius: 0;
+	width: 80%;
+	height: 10px;
+	background-color: #52ae32;
+	margin: 30px auto;
+}
+
+.calculator-content .calculator-slider-price {
+	margin-bottom: 50px;
+}
+
+.calculator-content .calculator-slider-price #slider-price,
+.calculator-content .calculator-slider-day #slider-day {
+	border: 0;
+	border-radius: 0;
+	transition: 0s;
+	height: 0;
+	margin: 0 18px;
+	background-color: #706f6f;
+	position: relative;
+}
+
+.calculator-content .calculator-slider-price #slider-price span,
+.calculator-content .calculator-slider-day #slider-day span {
+	border: 0;
+	transition: 0s;
+	display: block;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	font-weight: normal;
+	background-color: #fff;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: -18px;
+	z-index: 2;
+	cursor: default;
+	touch-action: none;
+	margin-left: -24px;
+	cursor: pointer;
+}
+
+.calculator-content .calculator-slider-price #slider-price span:focus,
+.calculator-content .calculator-slider-day #slider-day span:focus {
+	outline: none;
+}
+
+.calculator-content .calculator-slider-price #slider-price span:active,
+.calculator-content .calculator-slider-day #slider-day span:active {
+	background-color: #fff;
+}
+
+.calculator-content #slider-price span {
+	background-image: url("../img/Slider_2_icon.png");
+}
+
+.calculator-content #slider-day span {
+	background-image: url("../img/Slider_1_icon.png");
+}
+
+.calculator-content .calculator-result .calculator-result-info {
+	border-radius: 14px;
+	background-color: #e5e5e5;
+	padding: 13px;
+}
+
+.calculator-content .calculator-result .calculator-result-info .result-info-price,
+.calculator-content .calculator-result .calculator-result-info .result-info-day {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.calculator-content .calculator-result .calculator-result-info .result-info-price .name,
+.calculator-content .calculator-result .calculator-result-info .result-info-day .name {
+	color: #706f6f;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 22px;
+}
+
+.calculator-content .calculator-result .calculator-result-info .result-info-price .value,
+.calculator-content .calculator-result .calculator-result-info .result-info-day .value {
+	color: #706f6f;
+	font-size: 20px;
+	font-weight: 800;
+	line-height: 22px;
+}
+
+.calculator-content .calculator-result .calculator-result-info .result-info-price .promotional-price,
+.calculator-content .calculator-result .calculator-result-info .result-info-day .promotional-price {
+	display: none;
+	color: #52ae32;
+	font-size: 20px;
+	font-weight: 800;
+	line-height: 22px;
+}
+
+.calculator-content .calculator-result .calculator-result-info .result-info-price .not-active-price,
+.calculator-content .calculator-result .calculator-result-info .result-info-day .not-active-price {
+	color: #de180f;
+	text-decoration: line-through;
+}
+
+#js-choice-price,
+#js-choice-day {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 100px;
+	width: 100px;
+}
+
+/*=== home page ===*/
+
+/* === heeader responsive === */
+

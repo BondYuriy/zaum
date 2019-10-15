@@ -1,0 +1,206 @@
+/* calculator */
+.calculator-box {
+  height: 500px;
+  background-image: url("../img/3c3d6567d661043f78488a01119a9d9b.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 1)
+    );
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.calculator-content {
+  width: 70%;
+  background-color: #fff;
+  margin: 140px auto 0 auto;
+  padding: 30px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+
+  & .calculator-slider-price,
+  .calculator-slider-day {
+    position: relative;
+
+    & .calculator-slider-info {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      color: $text-color-light;
+      font-size: 20px;
+      font-weight: $Regular;
+
+      & .min-price,
+      .max-price,
+      .min-day,
+      .max-day {
+        position: absolute;
+        bottom: -2px;
+        font-size: 15px;
+        line-height: 14px;
+        color: $orange-color;
+        font-weight: 700;
+      }
+
+      & .min-price,
+      .min-day {
+        left: 0;
+      }
+
+      & .max-price,
+      .max-day {
+        right: 0;
+      }
+
+      & label {
+        margin: 0;
+        display: block;
+      }
+
+      & input {
+        border: 0;
+        width: 100px;
+        height: 36px;
+        color: $orange-color;
+        font-size: 30px;
+        font-weight: 900;
+        text-transform: uppercase;
+        background-color: rgba(0, 0, 0, 0);
+        line-height: normal;
+        text-align: center;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      & span {
+        width: 40px;
+      }
+    }
+  }
+
+  & .slider-scroll {
+    border: 0;
+    border-radius: 0;
+    width: 80%;
+    height: 10px;
+    background-color: $green-color;
+    margin: 30px auto;
+  }
+
+  & .calculator-slider-price {
+    margin-bottom: 50px;
+  }
+
+  & .calculator-slider-price #slider-price,
+  .calculator-slider-day #slider-day {
+    border: 0;
+    border-radius: 0;
+    transition: 0s;
+    height: 0;
+    margin: 0 18px;
+    background-color: $gray-color;
+    position: relative;
+
+    & span {
+      border: 0;
+      transition: 0s;
+      display: block;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      font-weight: normal;
+      background-color: $white;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      top: -18px;
+      z-index: 2;
+      cursor: default;
+      -ms-touch-action: none;
+      touch-action: none;
+      margin-left: -24px;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:active {
+        background-color: $white;
+      }
+    }
+  }
+
+  & #slider-price span {
+    background-image: url("../img/Slider_2_icon.png");
+  }
+
+  & #slider-day span {
+    background-image: url("../img/Slider_1_icon.png");
+  }
+
+  & .calculator-result .calculator-result-info {
+    border-radius: 14px;
+    background-color: #e5e5e5;
+    padding: 13px;
+
+    & .result-info-price,
+    .result-info-day {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & .name {
+        color: #706f6f;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+      }
+
+      & .value {
+        color: #706f6f;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 22px;
+      }
+
+      & .promotional-price {
+        display: none;
+        color: $green-color;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 22px;
+      }
+
+      & .not-active-price {
+        color: #de180f;
+        text-decoration: line-through;
+      }
+    }
+
+    & .result-info-price {
+    }
+  }
+}
+
+#js-choice-price,
+#js-choice-day {
+  display: none;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  width: 100px;
+}

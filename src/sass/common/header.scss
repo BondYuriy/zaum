@@ -1,0 +1,29 @@
+.header-wrapper {
+  height: 60px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+
+  & .logo {
+    margin-right: 230px;
+
+    & p {
+      margin: 0;
+      font-size: 40px;
+      font-weight: $Black;
+      color: $green-color;
+    }
+  }
+
+  & .slogan {
+    margin: 0;
+    font-size: 24px;
+    font-weight: $Bold;
+    color: $gray-color;
+  }
+}

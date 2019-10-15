@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>zaum</title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="header">
+            <div class="logo">
+              <p>ZAUM</p>
+            </div>
+            <h1 class="slogan">ЛЕГКИЙ КРЕДИТ В ПОТРІБНУ МИТЬ!</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="calculator-box">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="calculator-content">
+              <div class="calculator-slider-price">
+                <div class="calculator-slider-info">
+                  <label for="amount-price">Виберіть суму кредиту:</label>
+                  <span class="min-price">500</span>
+                  <span class="max-price">10000</span>
+                  <input type="text" id="amount-price" readonly>
+                  <p id="js-choice-price"></p>
+                  <span>грн</span>
+                </div>
+                <div class="slider-scroll">
+                  <div id="slider-price"></div>
+                </div>
+              </div>
+              <div class="calculator-slider-day">
+                <div class="calculator-slider-info">
+                  <label for="amount-day">Виберіть термін кредиту:</label>
+                  <span class="min-day">1</span>
+                  <span class="max-day">30</span>
+                  <input type="text" id="amount-day" readonly>
+                  <p id="js-choice-day"></p>
+                  <span>днів</span>
+                </div>
+                <div class="slider-scroll">
+                  <div id="slider-day"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="calculator-result">
+      <div class="partner-box">
+        <p>partner-1</p>
+        <p>logo</p>
+        <p>name</p>
+        <p>amount 500-5000</p>
+        <p>day 3-30</p>
+        <p>bet 1%</p>
+      </div>
+      <div class="calculator-result-info">
+        <div class="result-info-price">
+          <span class="name">Сума до сплати</span>
+          <span class="value  js-result-credit-price" data-rate="1" data-minprice="1000" data-maxprice="2000"></span>
+        </div>
+        <div class="result-info-day">
+          <span class="name">Дата до сплати</span>
+          <span class="value js-result-credit-day" data-minday="5" data-maxday="20"></span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="calculator-result">
+      <div class="partner-box">
+        <p>partner-2</p>
+        <p>logo</p>
+        <p>name</p>
+        <p>amount 500-5000</p>
+        <p>day 3-30</p>
+        <p>bet 1.75%</p>
+      </div>
+      <div class="calculator-result-info">
+        <div class="result-info-price">
+          <span class="name">Сума погашення</span>
+          <span class="value js-result-credit-price" data-rate="1.75" data-minprice="1500" data-maxprice="3000"></span>
+        </div>
+        <div class="result-info-day">
+          <span class="name">Дата погашення</span>
+          <span class="value js-result-credit-day" data-minday="10" data-maxday="25"></span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

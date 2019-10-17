@@ -1,4 +1,13 @@
 $(document).ready(function() {
+  /* toggle info */
+
+  $(".btn-toggle-info").click(function() {
+    $(this)
+      .next(".partner-toggle-box")
+      .toggleClass("show");
+  });
+
+  /* calculator */
   $(function() {
     $("#slider-price").slider({
       value: 1500,

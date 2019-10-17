@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk-UA">
 
 <head>
   <title>zaum</title>
@@ -73,23 +73,28 @@
               <div class="partner-box">
                 <div class="partner-title-box">
                   <h3>Швидко Гроші</h3>
-                  <div class="partner-logo">
+                  <a href="#" class="partner-logo">
                     <img src="img/shvidkogroshi.png" alt="logo">
-                  </div>
+                  </a>
                 </div>
                 <div class="partner-info-box">
                   <div class="calculator-result-info">
-                    <div class="result-price">
-                      <span class="name">Сума кредиту:</span>
-                      <span class="value js-credit-price"></span>
+                    <div class="calculator-result-box">
+                      <div class="result-price">
+                        <span class="name">Сума кредиту:</span>
+                        <span class="value js-credit-price"></span>
+                      </div>
+                      <div class="result-info-price">
+                        <span class="name">Сума до сплати:</span>
+                        <span class="value  js-result-credit-price" data-rate="2" data-minprice="600" data-maxprice="10000"></span>
+                      </div>
+                      <div class="result-info-day">
+                        <span class="name">Дата до сплати:</span>
+                        <span class="value js-result-credit-day" data-minday="5" data-maxday="30"></span>
+                      </div>
                     </div>
-                    <div class="result-info-price">
-                      <span class="name">Сума до сплати:</span>
-                      <span class="value  js-result-credit-price" data-rate="2" data-minprice="600" data-maxprice="10000"></span>
-                    </div>
-                    <div class="result-info-day">
-                      <span class="name">Дата до сплати:</span>
-                      <span class="value js-result-credit-day" data-minday="5" data-maxday="30"></span>
+                    <div class="bonus-box">
+                      <p>тут будет плюшка</p>
                     </div>
                   </div>
                   <div class="partner-info">
@@ -109,18 +114,14 @@
                 </div>
                 <div class="partner-btn-box">
                   <a href="#" class="btn btn-green">Оформити кредит</a>
-                  <button class="btn btn-green-transparent" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    Інформація
-                  </button>
                 </div>
               </div>
-              <div class="partner-main-info">
-                <div class="collapse" id="collapseExample">
-                  <div class="card card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                    Nihil
-                    anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                  </div>
+              <div class="btn btn-green-transparent btn-toggle-info">Інфомація</div>
+              <div class="partner-toggle-box">
+                <div class="partner-main-info">
+                  <p>01032, г. Киев, ул. Саксаганского 133-А</p>
+                  <p>тел. (044) 498 10 20</p>
+                  <p><a href="mailo:info@sgroshi.com">info@sgroshi.com</a></p>
                 </div>
               </div>
             </div>
@@ -128,7 +129,6 @@
         </div>
       </div>
     </div>
-
   </main>
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>

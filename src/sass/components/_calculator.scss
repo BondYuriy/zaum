@@ -151,49 +151,6 @@
   & #slider-day span {
     background-image: url("../img/Slider_1_icon.png");
   }
-
-  & .calculator-result .calculator-result-info {
-    border-radius: 14px;
-    background-color: #e5e5e5;
-    padding: 13px;
-
-    & .result-info-price,
-    .result-info-day {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      & .name {
-        color: #706f6f;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 22px;
-      }
-
-      & .value {
-        color: #706f6f;
-        font-size: 20px;
-        font-weight: 800;
-        line-height: 22px;
-      }
-
-      & .promotional-price {
-        display: none;
-        color: $green-color;
-        font-size: 20px;
-        font-weight: 800;
-        line-height: 22px;
-      }
-
-      & .not-active-price {
-        color: #de180f;
-        text-decoration: line-through;
-      }
-    }
-
-    & .result-info-price {
-    }
-  }
 }
 
 #js-choice-price,

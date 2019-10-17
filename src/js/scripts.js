@@ -32,6 +32,7 @@ $(document).ready(function() {
 
 const resultCreditPrice = document.querySelectorAll(".js-result-credit-price");
 const resultCreditDay = document.querySelectorAll(".js-result-credit-day");
+const creditPrice = document.querySelectorAll(".js-credit-price");
 
 let resultChoicePrice = 1500;
 let resultChoiceDay = 20;
@@ -61,11 +62,15 @@ function getPrice() {
       const interestLoan = (resultChoicePrice / 100) * percent;
       const total = Number(resultChoicePrice) + interestLoan;
       element.textContent = total.toFixed(2) + " грн";
-      element.style.color = "green";
+      element.style.color = "#52ae32";
     } else {
-      element.textContent = `від ${element.dataset.minprice} до ${element.dataset.maxprice} грн`;
+      element.textContent = `виберіть від ${element.dataset.minprice} до ${element.dataset.maxprice} грн`;
       element.style.color = "red";
     }
+  });
+
+  creditPrice.forEach(element => {
+    element.textContent = Number(resultChoicePrice).toFixed(2) + " грн";
   });
 }
 
@@ -98,9 +103,9 @@ function getDate(resultChoiceDay) {
       resultChoiceDay <= Number(element.dataset.maxday)
     ) {
       element.textContent = setData;
-      element.style.color = "green";
+      element.style.color = "#52ae32";
     } else {
-      element.textContent = `від ${element.dataset.minday} до ${element.dataset.maxday} днів`;
+      element.textContent = `виберіть від ${element.dataset.minday} до ${element.dataset.maxday} днів`;
       element.style.color = "red";
     }
   });

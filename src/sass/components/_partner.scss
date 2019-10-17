@@ -1,0 +1,118 @@
+.partner-card {
+  padding: 30px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+
+  & .partner-box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+    & .partner-title-box {
+      flex: 0 0 18%;
+
+      & .partner-logo {
+        & img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    & .partner-info-box {
+      flex: 0 0 55%;
+
+      & .calculator-result-info {
+        margin-bottom: 30px;
+
+        & .result-price,
+        .result-info-price,
+        .result-info-day {
+          display: flex;
+          align-items: center;
+
+          & .name {
+            flex: 0 0 25%;
+          }
+
+          & .value {
+            font-size: 18px;
+            font-weight: $Regular;
+          }
+        }
+
+        & .result-price {
+          & .value {
+            color: $orange-color;
+          }
+        }
+      }
+
+      & .partner-info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        & .partner-info-item {
+          flex: 0 0 30%;
+          padding-left: 50px;
+          position: relative;
+
+          &::before {
+            display: inline-block;
+            content: "";
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 3px;
+          }
+
+          &:nth-child(1)::before {
+            background-image: url("../../img/Vector_Smart_Object-5.png");
+            width: 28px;
+            height: 36px;
+          }
+
+          &:nth-child(2)::before {
+            background-image: url("../img/Layer_6.png");
+            width: 36px;
+            height: 36px;
+          }
+
+          &:nth-child(3)::before {
+            background-image: url("../img/Layer_1.png");
+            width: 36px;
+            height: 36px;
+          }
+
+          & span {
+            display: block;
+            font-size: 12px;
+            color: $gray-color;
+          }
+
+          & p {
+            margin: 0;
+            font-weight: $Bold;
+          }
+        }
+      }
+    }
+
+    & .partner-btn-box {
+      flex: 0 0 17%;
+    }
+  }
+
+  & .partner-main-info {
+    & .collapse {
+      & .card {
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
+        border-radius: 0;
+      }
+    }
+  }
+}

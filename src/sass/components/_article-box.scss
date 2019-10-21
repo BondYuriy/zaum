@@ -1,0 +1,37 @@
+.article-box {
+  padding: 50px 0;
+
+  & h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #706f6f;
+    text-transform: uppercase;
+    margin: 50px 0 15px 0;
+  }
+
+  & ul {
+    margin-bottom: 10px;
+    padding-left: 15px;
+
+    & li {
+      margin-bottom: 15px;
+      padding-left: 20px;
+      position: relative;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      &::before {
+        display: block;
+        content: "";
+        width: 8px;
+        height: 8px;
+        border: 2px solid $green-color;
+        position: absolute;
+        left: 0;
+        top: 7px;
+      }
+    }
+  }
+}

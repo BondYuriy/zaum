@@ -27,7 +27,7 @@ $(document).ready(function() {
     $("#slider-day").slider({
       value: 20,
       min: 1,
-      max: 30,
+      max: 180,
       step: 1,
       slide: function(event, ui) {
         $("#amount-day").val(ui.value);

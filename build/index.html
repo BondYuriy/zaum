@@ -50,7 +50,7 @@
                 <div class="calculator-slider-info">
                   <label for="amount-day">Виберіть термін кредиту:</label>
                   <span class="min-day">1</span>
-                  <span class="max-day">30</span>
+                  <span class="max-day">180</span>
                   <input type="text" id="amount-day" readonly="">
                   <p id="js-choice-day"></p>
                   <span>днів</span>
@@ -69,11 +69,665 @@
       <div class="row">
         <div class="col-12">
           <div class="partner-list">
+
+            <!-- Cashberry -->
+            <div class="partner-card">
+              <div class="partner-box">
+                <div class="partner-title-box">
+                  <h3>Cashberry</h3>
+                  <a href="https://cashberry.com.ua" target="_blank" class="partner-logo">
+                    <img src="img/Cashberry.png" alt="logo">
+                  </a>
+                  <span class="sticker">ZAUM рекомендує</span>
+                </div>
+                <div class="partner-info-box">
+                  <div class="calculator-result-info">
+                    <div class="calculator-result-box">
+                      <div class="result-price">
+                        <span class="name">Сума кредиту:</span>
+                        <span class="value js-credit-price"></span>
+                      </div>
+                      <div class="result-info-price">
+                        <span class="name">Сума до сплати:</span>
+                        <span class="value  js-result-credit-price" data-rate="1.5" data-minprice="500" data-maxprice="8000"></span>
+                      </div>
+                      <div class="result-info-day">
+                        <span class="name">Дата до сплати:</span>
+                        <span class="value js-result-credit-day" data-minday="1" data-maxday="30"></span>
+                      </div>
+                    </div>
+                    <!-- <div class="bonus-box">
+                      <p>тут будет плюшка</p>
+                    </div> -->
+                  </div>
+                  <div class="partner-info">
+                    <div class="partner-info-item">
+                      <span>Максимальна сума</span>
+                      <p>до 8000 грн</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Строк</span>
+                      <p>до 30 днів</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Ставка в день</span>
+                      <p>до 1.5%</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="partner-btn-box">
+                  <a href="https://cashberry.com.ua" target="_blank" class="btn btn-green">Оформити кредит</a>
+                </div>
+              </div>
+              <div class="btn btn-green-transparent btn-toggle-info">Інфомація</div>
+              <div class="partner-toggle-box">
+                <div class="partner-main-info">
+                  <p>01032, г. Киев, ул. Саксаганского 133-А</p>
+                  <p>тел. (044) 498 10 20</p>
+                  <p><a href="mailo:info@sgroshi.com">info@sgroshi.com</a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Creditup -->
+
+            <div class="partner-card">
+              <div class="partner-box">
+                <div class="partner-title-box">
+                  <h3>CreditUp</h3>
+                  <a href="https://creditup.com.ua" target="_blank" class="partner-logo">
+                    <img src="img/creditup.png" alt="logo">
+                  </a>
+                  <span class="sticker">ZAUM рекомендує</span>
+                </div>
+                <div class="partner-info-box">
+                  <div class="calculator-result-info">
+                    <div class="calculator-result-box">
+                      <div class="result-price">
+                        <span class="name">Сума кредиту:</span>
+                        <span class="value js-credit-price"></span>
+                      </div>
+                      <div class="result-info-price">
+                        <span class="name">Сума до сплати:</span>
+                        <span class="value  js-result-credit-price" data-rate="2.2" data-minprice="500" data-maxprice="5000"></span>
+                      </div>
+                      <div class="result-info-day">
+                        <span class="name">Дата до сплати:</span>
+                        <span class="value js-result-credit-day" data-minday="1" data-maxday="30"></span>
+                      </div>
+                    </div>
+                    <!-- <div class="bonus-box">
+                      <p>тут будет плюшка</p>
+                    </div> -->
+                  </div>
+                  <div class="partner-info">
+                    <div class="partner-info-item">
+                      <span>Максимальна сума</span>
+                      <p>до 5000 грн</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Строк</span>
+                      <p>до 30 днів</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Ставка в день</span>
+                      <p>до 2,2%</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="partner-btn-box">
+                  <a href="https://creditup.com.ua" target="_blank" class="btn btn-green">Оформити кредит</a>
+                </div>
+              </div>
+              <div class="btn btn-green-transparent btn-toggle-info">Інфомація</div>
+              <div class="partner-toggle-box">
+                <div class="partner-main-info">
+                  <p>01032, г. Киев, ул. Саксаганского 133-А</p>
+                  <p>тел. (044) 498 10 20</p>
+                  <p><a href="mailo:info@sgroshi.com">info@sgroshi.com</a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ukrpozyka  -->
+
+            <div class="partner-card">
+              <div class="partner-box">
+                <div class="partner-title-box">
+                  <h3>УкрПозика</h3>
+                  <a href="https://ukrpozyka.com.ua" target="_blank" class="partner-logo">
+                    <img src="img/ukr-pozyka-logo.svg" alt="logo">
+                  </a>
+                  <span class="sticker">ZAUM рекомендує</span>
+                </div>
+                <div class="partner-info-box">
+                  <div class="calculator-result-info">
+                    <div class="calculator-result-box">
+                      <div class="result-price">
+                        <span class="name">Сума кредиту:</span>
+                        <span class="value js-credit-price"></span>
+                      </div>
+                      <div class="result-info-price">
+                        <span class="name">Сума до сплати:</span>
+                        <span class="value  js-result-credit-price" data-rate="0" data-minprice="500" data-maxprice="10000"></span>
+                      </div>
+                      <div class="result-info-day">
+                        <span class="name">Дата до сплати:</span>
+                        <span class="value js-result-credit-day" data-minday="1" data-maxday="30"></span>
+                      </div>
+                    </div>
+                    <div class="bonus-box">
+                      <p><strong>0%</strong>на першу позику</p>
+                    </div>
+                  </div>
+                  <div class="partner-info">
+                    <div class="partner-info-item">
+                      <span>Максимальна сума</span>
+                      <p>до 10000 грн</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Строк</span>
+                      <p>до 30 днів</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Ставка в день</span>
+                      <p>0%</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="partner-btn-box">
+                  <a href="https://ukrpozyka.com.ua" target="_blank" class="btn btn-green">Оформити кредит</a>
+                </div>
+              </div>
+              <div class="btn btn-green-transparent btn-toggle-info">Інфомація</div>
+              <div class="partner-toggle-box">
+                <div class="partner-main-info">
+                  <p>01032, г. Киев, ул. Саксаганского 133-А</p>
+                  <p>тел. (044) 498 10 20</p>
+                  <p><a href="mailo:info@sgroshi.com">info@sgroshi.com</a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Forzacredit   -->
+
+            <div class="partner-card">
+              <div class="partner-box">
+                <div class="partner-title-box">
+                  <h3>Forzacredit</h3>
+                  <a href="https://forzacredit.com.ua" target="_blank" class="partner-logo">
+                    <img src="img/forza.png" alt="logo">
+                  </a>
+                </div>
+                <div class="partner-info-box">
+                  <div class="calculator-result-info">
+                    <div class="calculator-result-box">
+                      <div class="result-price">
+                        <span class="name">Сума кредиту:</span>
+                        <span class="value js-credit-price"></span>
+                      </div>
+                      <div class="result-info-price">
+                        <span class="name">Сума до сплати:</span>
+                        <span class="value  js-result-credit-price" data-rate="0.01" data-minprice="500" data-maxprice="10000"></span>
+                      </div>
+                      <div class="result-info-day">
+                        <span class="name">Дата до сплати:</span>
+                        <span class="value js-result-credit-day" data-minday="1" data-maxday="180"></span>
+                      </div>
+                    </div>
+                    <div class="bonus-box">
+                      <p><strong>0.01%</strong>на першу позику</p>
+                    </div>
+                  </div>
+                  <div class="partner-info">
+                    <div class="partner-info-item">
+                      <span>Максимальна сума</span>
+                      <p>до 10000 грн</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Строк</span>
+                      <p>до 180 днів</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Ставка в день</span>
+                      <p>до 1.85%</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="partner-btn-box">
+                  <a href="https://forzacredit.com.ua" target="_blank" class="btn btn-green">Оформити кредит</a>
+                </div>
+              </div>
+              <div class="btn btn-green-transparent btn-toggle-info">Інфомація</div>
+              <div class="partner-toggle-box">
+                <div class="partner-main-info">
+                  <p>01032, г. Киев, ул. Саксаганского 133-А</p>
+                  <p>тел. (044) 498 10 20</p>
+                  <p><a href="mailo:info@sgroshi.com">info@sgroshi.com</a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Gofingo -->
+
+            <div class="partner-card">
+              <div class="partner-box">
+                <div class="partner-title-box">
+                  <h3>ГОУФІНГОУ</h3>
+                  <a href="https://gofingo.com.ua" target="_blank" class="partner-logo">
+                    <img src="img/gofingo.png" alt="logo">
+                  </a>
+                </div>
+                <div class="partner-info-box">
+                  <div class="calculator-result-info">
+                    <div class="calculator-result-box">
+                      <div class="result-price">
+                        <span class="name">Сума кредиту:</span>
+                        <span class="value js-credit-price"></span>
+                      </div>
+                      <div class="result-info-price">
+                        <span class="name">Сума до сплати:</span>
+                        <span class="value  js-result-credit-price" data-rate="1.85" data-minprice="500" data-maxprice="10000"></span>
+                      </div>
+                      <div class="result-info-day">
+                        <span class="name">Дата до сплати:</span>
+                        <span class="value js-result-credit-day" data-minday="1" data-maxday="30"></span>
+                      </div>
+                    </div>
+                    <!-- <div class="bonus-box">
+                      <p>тут будет плюшка</p>
+                    </div> -->
+                  </div>
+                  <div class="partner-info">
+                    <div class="partner-info-item">
+                      <span>Максимальна сума</span>
+                      <p>до 10000 грн</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Строк</span>
+                      <p>до 30 днів</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Ставка в день</span>
+                      <p>до 1.85%</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="partner-btn-box">
+                  <a href="https://gofingo.com.ua" target="_blank" class="btn btn-green">Оформити кредит</a>
+                </div>
+              </div>
+              <div class="btn btn-green-transparent btn-toggle-info">Інфомація</div>
+              <div class="partner-toggle-box">
+                <div class="partner-main-info">
+                  <p>01032, г. Киев, ул. Саксаганского 133-А</p>
+                  <p>тел. (044) 498 10 20</p>
+                  <p><a href="mailo:info@sgroshi.com">info@sgroshi.com</a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- EvroGroshi  -->
+
+            <div class="partner-card">
+              <div class="partner-box">
+                <div class="partner-title-box">
+                  <h3>Євро Гроші</h3>
+                  <a href="https://www.eurogroshi.com.ua" target="_blank" class="partner-logo">
+                    <img src="img/eurogroshi.png" alt="logo">
+                  </a>
+                </div>
+                <div class="partner-info-box">
+                  <div class="calculator-result-info">
+                    <div class="calculator-result-box">
+                      <div class="result-price">
+                        <span class="name">Сума кредиту:</span>
+                        <span class="value js-credit-price"></span>
+                      </div>
+                      <div class="result-info-price">
+                        <span class="name">Сума до сплати:</span>
+                        <span class="value  js-result-credit-price" data-rate="1.9" data-minprice="500" data-maxprice="10000"></span>
+                      </div>
+                      <div class="result-info-day">
+                        <span class="name">Дата до сплати:</span>
+                        <span class="value js-result-credit-day" data-minday="1" data-maxday="30"></span>
+                      </div>
+                    </div>
+                    <!-- <div class="bonus-box">
+                      <p>тут будет плюшка</p>
+                    </div> -->
+                  </div>
+                  <div class="partner-info">
+                    <div class="partner-info-item">
+                      <span>Максимальна сума</span>
+                      <p>до 10000 грн</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Строк</span>
+                      <p>до 30 днів</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Ставка в день</span>
+                      <p>до 1.9%</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="partner-btn-box">
+                  <a href="https://www.eurogroshi.com.ua" target="_blank" class="btn btn-green">Оформити кредит</a>
+                </div>
+              </div>
+              <div class="btn btn-green-transparent btn-toggle-info">Інфомація</div>
+              <div class="partner-toggle-box">
+                <div class="partner-main-info">
+                  <p>01032, г. Киев, ул. Саксаганского 133-А</p>
+                  <p>тел. (044) 498 10 20</p>
+                  <p><a href="mailo:info@sgroshi.com">info@sgroshi.com</a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Money4You  -->
+
+            <div class="partner-card">
+              <div class="partner-box">
+                <div class="partner-title-box">
+                  <h3>Money4You</h3>
+                  <a href="https://money4you.com.ua" target="_blank" class="partner-logo">
+                    <img src="img/logo-m4u.png" alt="logo">
+                  </a>
+                </div>
+                <div class="partner-info-box">
+                  <div class="calculator-result-info">
+                    <div class="calculator-result-box">
+                      <div class="result-price">
+                        <span class="name">Сума кредиту:</span>
+                        <span class="value js-credit-price"></span>
+                      </div>
+                      <div class="result-info-price">
+                        <span class="name">Сума до сплати:</span>
+                        <span class="value  js-result-credit-price" data-rate="1.75" data-minprice="500" data-maxprice="7000"></span>
+                      </div>
+                      <div class="result-info-day">
+                        <span class="name">Дата до сплати:</span>
+                        <span class="value js-result-credit-day" data-minday="1" data-maxday="30"></span>
+                      </div>
+                    </div>
+                    <!-- <div class="bonus-box">
+                      <p>тут будет плюшка</p>
+                    </div> -->
+                  </div>
+                  <div class="partner-info">
+                    <div class="partner-info-item">
+                      <span>Максимальна сума</span>
+                      <p>до 7000 грн</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Строк</span>
+                      <p>до 30 днів</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Ставка в день</span>
+                      <p>до 1.75%</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="partner-btn-box">
+                  <a href="https://money4you.com.ua" target="_blank" class="btn btn-green">Оформити кредит</a>
+                </div>
+              </div>
+              <div class="btn btn-green-transparent btn-toggle-info">Інфомація</div>
+              <div class="partner-toggle-box">
+                <div class="partner-main-info">
+                  <p>01032, г. Киев, ул. Саксаганского 133-А</p>
+                  <p>тел. (044) 498 10 20</p>
+                  <p><a href="mailo:info@sgroshi.com">info@sgroshi.com</a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CreditPlus  -->
+
+            <div class="partner-card">
+              <div class="partner-box">
+                <div class="partner-title-box">
+                  <h3>CreditPlus</h3>
+                  <a href="https://creditplus.ua" target="_blank" class="partner-logo">
+                    <img src="img/CreditPlus.png" alt="logo">
+                  </a>
+                </div>
+                <div class="partner-info-box">
+                  <div class="calculator-result-info">
+                    <div class="calculator-result-box">
+                      <div class="result-price">
+                        <span class="name">Сума кредиту:</span>
+                        <span class="value js-credit-price"></span>
+                      </div>
+                      <div class="result-info-price">
+                        <span class="name">Сума до сплати:</span>
+                        <span class="value  js-result-credit-price" data-rate="0.01" data-minprice="500" data-maxprice="10000"></span>
+                      </div>
+                      <div class="result-info-day">
+                        <span class="name">Дата до сплати:</span>
+                        <span class="value js-result-credit-day" data-minday="5" data-maxday="30"></span>
+                      </div>
+                    </div>
+                    <div class="bonus-box">
+                      <p><strong>0.01%</strong>на першу позику</p>
+                    </div>
+                  </div>
+                  <div class="partner-info">
+                    <div class="partner-info-item">
+                      <span>Максимальна сума</span>
+                      <p>до 10000 грн</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Строк</span>
+                      <p>до 30 днів</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Ставка в день</span>
+                      <p>0.01%</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="partner-btn-box">
+                  <a href="https://creditplus.ua" target="_blank" class="btn btn-green">Оформити кредит</a>
+                </div>
+              </div>
+              <div class="btn btn-green-transparent btn-toggle-info">Інфомація</div>
+              <div class="partner-toggle-box">
+                <div class="partner-main-info">
+                  <p>01032, г. Киев, ул. Саксаганского 133-А</p>
+                  <p>тел. (044) 498 10 20</p>
+                  <p><a href="mailo:info@sgroshi.com">info@sgroshi.com</a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- groshik -->
+
+            <div class="partner-card">
+              <div class="partner-box">
+                <div class="partner-title-box">
+                  <h3>Грошик</h3>
+                  <a href="https://groshik.com" target="_blank" class="partner-logo">
+                    <img src="img/groshuk-logo.svg" alt="logo">
+                  </a>
+                </div>
+                <div class="partner-info-box">
+                  <div class="calculator-result-info">
+                    <div class="calculator-result-box">
+                      <div class="result-price">
+                        <span class="name">Сума кредиту:</span>
+                        <span class="value js-credit-price"></span>
+                      </div>
+                      <div class="result-info-price">
+                        <span class="name">Сума до сплати:</span>
+                        <span class="value  js-result-credit-price" data-rate="1.7" data-minprice="500" data-maxprice="10000"></span>
+                      </div>
+                      <div class="result-info-day">
+                        <span class="name">Дата до сплати:</span>
+                        <span class="value js-result-credit-day" data-minday="1" data-maxday="30"></span>
+                      </div>
+                    </div>
+                    <!-- <div class="bonus-box">
+                      <p>тут будет плюшка</p>
+                    </div> -->
+                  </div>
+                  <div class="partner-info">
+                    <div class="partner-info-item">
+                      <span>Максимальна сума</span>
+                      <p>до 10000 грн</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Строк</span>
+                      <p>до 30 днів</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Ставка в день</span>
+                      <p>до 1.7%</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="partner-btn-box">
+                  <a href="https://groshik.com" target="_blank" class="btn btn-green">Оформити кредит</a>
+                </div>
+              </div>
+              <div class="btn btn-green-transparent btn-toggle-info">Інфомація</div>
+              <div class="partner-toggle-box">
+                <div class="partner-main-info">
+                  <p>01032, г. Киев, ул. Саксаганского 133-А</p>
+                  <p>тел. (044) 498 10 20</p>
+                  <p><a href="mailo:info@sgroshi.com">info@sgroshi.com</a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Е-cash -->
+
+            <div class="partner-card">
+              <div class="partner-box">
+                <div class="partner-title-box">
+                  <h3>Е-cash</h3>
+                  <a href="https://www.e-cash.com.ua" target="_blank" class="partner-logo">
+                    <img src="img/e-cash-logo.png" alt="logo">
+                  </a>
+                </div>
+                <div class="partner-info-box">
+                  <div class="calculator-result-info">
+                    <div class="calculator-result-box">
+                      <div class="result-price">
+                        <span class="name">Сума кредиту:</span>
+                        <span class="value js-credit-price"></span>
+                      </div>
+                      <div class="result-info-price">
+                        <span class="name">Сума до сплати:</span>
+                        <span class="value  js-result-credit-price" data-rate="0.01" data-minprice="500" data-maxprice="5000"></span>
+                      </div>
+                      <div class="result-info-day">
+                        <span class="name">Дата до сплати:</span>
+                        <span class="value js-result-credit-day" data-minday="1" data-maxday="30"></span>
+                      </div>
+                    </div>
+                    <div class="bonus-box">
+                      <p><strong>0.01%</strong>на першу позику</p>
+                    </div>
+                  </div>
+                  <div class="partner-info">
+                    <div class="partner-info-item">
+                      <span>Максимальна сума</span>
+                      <p>до 5000 грн</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Строк</span>
+                      <p>до 30 днів</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Ставка в день</span>
+                      <p>до 1.5%</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="partner-btn-box">
+                  <a href="https://www.e-cash.com.ua" target="_blank" class="btn btn-green">Оформити кредит</a>
+                </div>
+              </div>
+              <div class="btn btn-green-transparent btn-toggle-info">Інфомація</div>
+              <div class="partner-toggle-box">
+                <div class="partner-main-info">
+                  <p>01032, г. Киев, ул. Саксаганского 133-А</p>
+                  <p>тел. (044) 498 10 20</p>
+                  <p><a href="mailo:info@sgroshi.com">info@sgroshi.com</a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- soscredit -->
+
+            <div class="partner-card">
+              <div class="partner-box">
+                <div class="partner-title-box">
+                  <h3>SOS CREDIT</h3>
+                  <a href="https://soscredit.ua" target="_blank" class="partner-logo">
+                    <img src="img/soscredit.png" alt="logo">
+                  </a>
+                </div>
+                <div class="partner-info-box">
+                  <div class="calculator-result-info">
+                    <div class="calculator-result-box">
+                      <div class="result-price">
+                        <span class="name">Сума кредиту:</span>
+                        <span class="value js-credit-price"></span>
+                      </div>
+                      <div class="result-info-price">
+                        <span class="name">Сума до сплати:</span>
+                        <span class="value  js-result-credit-price" data-rate="0.99" data-minprice="500" data-maxprice="5000"></span>
+                      </div>
+                      <div class="result-info-day">
+                        <span class="name">Дата до сплати:</span>
+                        <span class="value js-result-credit-day" data-minday="1" data-maxday="30"></span>
+                      </div>
+                    </div>
+                    <div class="bonus-box">
+                      <p><strong>0.99%</strong>на перші 2 позики</p>
+                    </div>
+                  </div>
+                  <div class="partner-info">
+                    <div class="partner-info-item">
+                      <span>Максимальна сума</span>
+                      <p>до 5000 грн</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Строк</span>
+                      <p>до 30 днів</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Ставка в день</span>
+                      <p>0.99%</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="partner-btn-box">
+                  <a href="https://soscredit.ua" target="_blank" class="btn btn-green">Оформити кредит</a>
+                </div>
+              </div>
+              <div class="btn btn-green-transparent btn-toggle-info">Інфомація</div>
+              <div class="partner-toggle-box">
+                <div class="partner-main-info">
+                  <p>01032, г. Киев, ул. Саксаганского 133-А</p>
+                  <p>тел. (044) 498 10 20</p>
+                  <p><a href="mailo:info@sgroshi.com">info@sgroshi.com</a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- shvidko groshi -->
+
             <div class="partner-card">
               <div class="partner-box">
                 <div class="partner-title-box">
                   <h3>Швидко Гроші</h3>
-                  <a href="#" class="partner-logo">
+                  <a href="https://sgroshi.com.ua" target="_blank" class="partner-logo">
                     <img src="img/shvidkogroshi.png" alt="logo">
                   </a>
                 </div>
@@ -86,16 +740,16 @@
                       </div>
                       <div class="result-info-price">
                         <span class="name">Сума до сплати:</span>
-                        <span class="value  js-result-credit-price" data-rate="2" data-minprice="600" data-maxprice="10000"></span>
+                        <span class="value  js-result-credit-price" data-rate="2" data-minprice="500" data-maxprice="10000"></span>
                       </div>
                       <div class="result-info-day">
                         <span class="name">Дата до сплати:</span>
-                        <span class="value js-result-credit-day" data-minday="5" data-maxday="30"></span>
+                        <span class="value js-result-credit-day" data-minday="1" data-maxday="30"></span>
                       </div>
                     </div>
-                    <div class="bonus-box">
+                    <!-- <div class="bonus-box">
                       <p>тут будет плюшка</p>
-                    </div>
+                    </div> -->
                   </div>
                   <div class="partner-info">
                     <div class="partner-info-item">
@@ -113,7 +767,66 @@
                   </div>
                 </div>
                 <div class="partner-btn-box">
-                  <a href="#" class="btn btn-green">Оформити кредит</a>
+                  <a href="https://sgroshi.com.ua" target="_blank" class="btn btn-green">Оформити кредит</a>
+                </div>
+              </div>
+              <div class="btn btn-green-transparent btn-toggle-info">Інфомація</div>
+              <div class="partner-toggle-box">
+                <div class="partner-main-info">
+                  <p>01032, г. Киев, ул. Саксаганского 133-А</p>
+                  <p>тел. (044) 498 10 20</p>
+                  <p><a href="mailo:info@sgroshi.com">info@sgroshi.com</a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CC loan -->
+
+            <div class="partner-card">
+              <div class="partner-box">
+                <div class="partner-title-box">
+                  <h3>CC ЛОУН</h3>
+                  <a href="https://www.ccloan.ua" target="_blank" class="partner-logo">
+                    <img src="img/ccloan-min.png.pagespeed.ce.PclqfX65wz.png" alt="logo">
+                  </a>
+                </div>
+                <div class="partner-info-box">
+                  <div class="calculator-result-info">
+                    <div class="calculator-result-box">
+                      <div class="result-price">
+                        <span class="name">Сума кредиту:</span>
+                        <span class="value js-credit-price"></span>
+                      </div>
+                      <div class="result-info-price">
+                        <span class="name">Сума до сплати:</span>
+                        <span class="value  js-result-credit-price" data-rate="1.65" data-minprice="500" data-maxprice="10000"></span>
+                      </div>
+                      <div class="result-info-day">
+                        <span class="name">Дата до сплати:</span>
+                        <span class="value js-result-credit-day" data-minday="1" data-maxday="30"></span>
+                      </div>
+                    </div>
+                    <!-- <div class="bonus-box">
+                      <p>тут будет плюшка</p>
+                    </div> -->
+                  </div>
+                  <div class="partner-info">
+                    <div class="partner-info-item">
+                      <span>Максимальна сума</span>
+                      <p>до 10000 грн</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Строк</span>
+                      <p>до 30 днів</p>
+                    </div>
+                    <div class="partner-info-item">
+                      <span>Ставка в день</span>
+                      <p>до 1.65%</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="partner-btn-box">
+                  <a href="https://www.ccloan.ua" target="_blank" class="btn btn-green">Оформити кредит</a>
                 </div>
               </div>
               <div class="btn btn-green-transparent btn-toggle-info">Інфомація</div>
@@ -128,8 +841,97 @@
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="article-box">
+            <p>Мікрофінансові організації користуються великою популярністю у населення України. Нестабільність
+              економічної ситуації в країні, затримка зарплати і виникнення непередбачених ситуацій, зробили свою, і
+              кредити стали затребувані. Онлайн кредити можна вважати відносно новим явищем, який став популярним за
+              кілька років. Попит викликаний оперативністю роботи, доступністю позик і зручністю, так як кошти можна
+              отримувати в будь-якому зручному місці і в будь-який зручний час. Досить кілька хвилин вільного часу і
+              наявність стабільного інтернету.
+            </p>
+            <h3>Переваги онлайн кредитів</h3>
+            <p>Онлайн кредити хороші тим, що для їх отримання не потрібно стояти в чергах, витрачати кілька годин на
+              оформлення і збирати великий пакет документів. Все досить спрощено, так що займ оформляти не тільки легко,
+              але і приємно. Мінімальна кількість зусиль і дій, і ось уже бажана сума на банківській картці. До числа
+              основних переваг також можна віднести:</p>
+            <ul>
+              <li><strong>Швидкість оформлення позики.</strong>На реєстрацію і отримання відповіді досить виділити 10-15
+                часу, ніж банківські структури похвалитися не можуть;</li>
+              <li><strong>Мінімальна кількість документів.</strong>Так, щоб отримати позику, потрібно мати паспорт
+                громадянина України, ІПН і діючу банківську карту;</li>
+              <li><strong>Простота.</strong>Щоб отримати позику, не потрібно залишати будинок і вставати з дивана, так
+                як весь процес автоматизований і всі дії відбуваються в режимі онлайн;</li>
+              <li><strong>Цілодобовий режим роботи.</strong>Тепер не потрібно підлаштовуватися під графік роботи
+                компанії, так як позика можна отримати в будь-який час дня і ночі;</li>
+              <li><strong>Прозорість.</strong>Перед оформленням позики, кожен клієнт може попередньо розрахувати суму і
+                термін кредитування, а також ознайомитися і з розміром процентної ставки. Плюс, він може в будь-який
+                момент достроково виплатити позику, і за це не буде нараховано ніяких комісій;</li>
+              <li><strong>Невеликі суми і недовгий термін кредитування.</strong>Банки в основному видають великі суми на
+                тривалий час;</li>
+              <li>При оформленні онлайн позики не потрібно підтверджувати дохід, шукати заставу і поручителів;</li>
+              <li><strong>Відсутність цільового призначення.</strong>У більшості випадків, що кредитує сервіс не питає,
+                для чого і навіщо клієнт бере позику;</li>
+              <li>Вигідні умови кредитування для пенсіонерів, студентів і людей, які не мають офіційного
+                працевлаштування;</li>
+              <li>Регулярне проведення різнопланових акцій;</li>
+              <li>Наявність програм лояльності і бонусних систем;</li>
+              <li>Можливість оформлення позики з використанням промо-коду;</li>
+              <li>Мінімальні вимоги і лояльність до клієнтів.</li>
+            </ul>
+            <h3>Час розгляду заявки і видача грошей</h3>
+            <p>Заявки на мікропозик розглядаються досить швидко. Анкета перевіряється за лічені хвилини, а все тому, що
+              в заявці надається мінімальна кількість інформації, яка потребує детальної перевірки. Всі сервіси
+              автоматизовані, тому цілком ймовірно, що кошти на банківську карту будуть зараховані протягом відносно
+              короткого часу.</p>
+            <p>Так, весь процес оформлення позики може зайняти 10-15 хвилин. Деякі компанії видають позику миттєво,
+              деяким необхідно трохи більше часу (від 1 години до доби).</p>
+            <h3>Кредити онлайн тепер цілодобово</h3>
+            <p>Як вже було зазначено, кредит онлайн на карту можна отримати в будь-який час дня і ночі. Більш того,
+              більшість мікрокредітних організацій працюють у святкові дні, що дає можливість оформити кошти тоді, коли
+              вони дійсно потрібні.</p>
+            <h3>Видають навіть з поганою кредитною історією</h3>
+            <p>Банки, на відміну від МФО не співпрацюють з клієнтами, у яких були прострочення по раніше узятих
+              кредитах. Якщо зіпсований кредитний рейтинг, то про банківський позику можна забути, а ось швидкий кредит,
+              можуть оформити ті, у кого раніше був зіпсований цей показник. Правда, кредитуючи таких громадян, деякі
+              сервіси просять підтвердити платоспроможність, але якщо з виплатою позики не виникне проблем, то при
+              подальших зверненнях в цьому не виникне потреби.</p>
+            <h3>Сервіс порівняння кредитів Zaum</h3>
+            <p>Сьогодні, підібрати відповідні умови кредитування і вибрати МФО для співпраці, набагато простіше, так як
+              є сервіс Zaum. Тут зібрані кращі сервіси мікрокредитування, що дозволяють отримати вигідні пропозиції по
+              позиках. Досить провести порівняння, ознайомитися з наданою інформацією і прийняти рішення. Сервіс зручний
+              і тим, що можна самостійно підібрати варіант, спираючись на свої переваги і побажання. Так, можна вибрати
+              категорію позики онлайн, кредит цілодобово на карту, мікропозики по інтернету, акції і т.д., що істотно
+              дозволить скоротити час пошуку. CreditObzor надає дані тільки про ліцензовані компаніях, що мають
+              рекомендації та відгуки.</p>
+            <p>Сервіс носить інформативний характер, виступаючи посередником між клієнтом і МФО. Вся представлена
+              ​​інформація і всі послуги безкоштовні, так, як нам відомо, як важливо отримати хороший займ. Сайт не
+              займається збором інформації, а все заявки заповнюються на офіційному сайті компанії. Наш сайт дозволяє
+              клієнтам зробити наступне:</p>
+            <ul>
+              <li>Ознайомитися зі статистикою по видачі позик;</li>
+              <li>Ознайомитися з діяльністю компанії, яка видає позики;</li>
+              <li>Почитати корисні статті про світ мікрокредитування;</li>
+              <li>Перейти на сайт компанії і оформити позику;</li>
+              <li>Інформування щодо діючих акцій.</li>
+            </ul>
+            <p>Сервіс дуже інформативний, тому може надати допомогу у виборі підходящої компанії, якщо клієнт вперше
+              зіткнувся зі світом мікрокредитування і не має жодного уявлення про позики.</p>
+            <p>Сайт Zaum зручний і простий у використанні. Інтерфейс доступний і зрозумілий, що дає можливість знайти
+              відповідь на питання, що цікавить за кілька секунд.</p>
+            <p>Зручно те, що всі провідні МФО зібрані в таблицю, в якій не тільки основні дані про організацію та її
+              діяльність, але позначений і кредитний рейтинг і процентна ставка, і спосіб отримання коштів. У таблиці
+              також є інформація і про суму позики, на яку можна розраховувати при першому зверненні. Є й окрема колонка
+              про термін кредитування, що також досить зручно.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
+  <footer class="footer">
+    <p>© Zaum 2019</p>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

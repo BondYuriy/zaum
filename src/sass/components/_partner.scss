@@ -1,7 +1,7 @@
 .partner-card {
   padding: 30px 30px 0px 30px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   position: relative;
   background-color: #fff;
 
@@ -68,6 +68,13 @@
 
           & p {
             margin: 0;
+            text-align: center;
+
+            & strong {
+              display: block;
+              font-size: 34px;
+              color: $orange-color;
+            }
           }
         }
       }
@@ -152,5 +159,9 @@
 
   & .show {
     max-height: 200px;
+  }
+
+  &:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
   }
 }

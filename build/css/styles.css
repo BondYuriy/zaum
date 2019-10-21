@@ -166,6 +166,19 @@ button:focus {
 	opacity: 0.7;
 }
 
+.sticker {
+	padding: 3px 10px;
+	display: inline;
+	background-color: #706f6f;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+	position: absolute;
+	left: 0;
+	top: -20px;
+}
+
 .header-wrapper {
 	height: 60px;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
@@ -197,6 +210,17 @@ button:focus {
 }
 
 /*=== footer ===*/
+
+.footer {
+	padding: 25px 0;
+	background-color: #231f20;
+	text-align: center;
+	color: #fff;
+}
+
+.footer p {
+	margin: 0;
+}
 
 /* calculator */
 
@@ -377,7 +401,7 @@ button:focus {
 .partner-card {
 	padding: 30px 30px 0px 30px;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 	position: relative;
 	background-color: #fff;
 }
@@ -451,6 +475,13 @@ button:focus {
 
 .partner-card .partner-box .partner-info-box .calculator-result-info .bonus-box p {
 	margin: 0;
+	text-align: center;
+}
+
+.partner-card .partner-box .partner-info-box .calculator-result-info .bonus-box p strong {
+	display: block;
+	font-size: 34px;
+	color: #ffad00;
 }
 
 .partner-card .partner-box .partner-info-box .partner-info {
@@ -531,6 +562,48 @@ button:focus {
 
 .partner-card .show {
 	max-height: 200px;
+}
+
+.partner-card:hover {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.article-box {
+	padding: 50px 0;
+}
+
+.article-box h3 {
+	font-size: 24px;
+	font-weight: 700;
+	color: #706f6f;
+	text-transform: uppercase;
+	margin: 50px 0 15px 0;
+}
+
+.article-box ul {
+	margin-bottom: 10px;
+	padding-left: 15px;
+}
+
+.article-box ul li {
+	margin-bottom: 15px;
+	padding-left: 20px;
+	position: relative;
+}
+
+.article-box ul li:last-child {
+	margin: 0;
+}
+
+.article-box ul li::before {
+	display: block;
+	content: "";
+	width: 8px;
+	height: 8px;
+	border: 2px solid #52ae32;
+	position: absolute;
+	left: 0;
+	top: 7px;
 }
 
 /*=== home page ===*/

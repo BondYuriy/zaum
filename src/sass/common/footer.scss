@@ -1,1 +1,12 @@
 /*=== footer ===*/
+
+.footer {
+  padding: 25px 0;
+  background-color: $text-color;
+  text-align: center;
+  color: $white-text;
+
+  & p {
+    margin: 0;
+  }
+}

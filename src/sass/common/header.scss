@@ -10,13 +10,14 @@
   align-items: center;
 
   & .logo {
-    margin-right: 230px;
+    margin-right: calc(50% - 230px);
 
     & p {
       margin: 0;
       font-size: 40px;
       font-weight: $Black;
       color: $green-color;
+      text-transform: uppercase;
     }
   }
 
@@ -25,5 +26,6 @@
     font-size: 24px;
     font-weight: $Bold;
     color: $gray-color;
+    text-transform: uppercase;
   }
 }

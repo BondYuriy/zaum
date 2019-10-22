@@ -192,7 +192,7 @@ button:focus {
 }
 
 .header .logo {
-	margin-right: 230px;
+	margin-right: calc(50% - 230px);
 }
 
 .header .logo p {
@@ -200,6 +200,7 @@ button:focus {
 	font-size: 40px;
 	font-weight: 900;
 	color: #52ae32;
+	text-transform: uppercase;
 }
 
 .header .slogan {
@@ -207,6 +208,7 @@ button:focus {
 	font-size: 24px;
 	font-weight: 700;
 	color: #706f6f;
+	text-transform: uppercase;
 }
 
 /*=== footer ===*/
@@ -294,6 +296,7 @@ button:focus {
 .calculator-content .calculator-slider-day .calculator-slider-info .max-price,
 .calculator-content .calculator-slider-day .calculator-slider-info .max-day {
 	right: 0;
+	text-align: right;
 }
 
 .calculator-content .calculator-slider-price .calculator-slider-info label,
@@ -409,6 +412,7 @@ button:focus {
 .partner-card .partner-box {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	padding-bottom: 30px;
 }
 
@@ -606,7 +610,285 @@ button:focus {
 	top: 7px;
 }
 
+.to-top {
+	border: 3px solid #e5e5e5;
+	width: 46px;
+	height: 46px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	opacity: 0;
+	transition: all 0.8s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.to-top svg {
+	display: block;
+	width: 30px;
+	height: 30px;
+	fill: #e5e5e5;
+}
+
+.to-top:hover {
+	border: 3px solid #52ae32;
+}
+
+.to-top:hover svg {
+	fill: #52ae32;
+}
+
+.visible {
+	opacity: 1;
+}
+
 /*=== home page ===*/
 
-/* === heeader responsive === */
+/* heeader responsive */
+
+/* partner-card responsive */
+
+@media (max-width: 1199px) {
+
+.partner-card .partner-box .partner-title-box {
+	flex: 0 0 15%;
+}
+
+.partner-card .partner-box .partner-title-box h3 {
+	font-size: 22px;
+}
+
+.partner-card .partner-box .partner-info-box {
+	flex: 0 0 65%;
+}
+
+.partner-card .btn-toggle-info {
+	width: 148px;
+}
+
+}
+
+@media (max-width: 991px) {
+
+.calculator-content {
+	width: 80%;
+}
+
+.partner-card .partner-box .partner-title-box {
+	flex: 0 0 20%;
+}
+
+.partner-card .partner-box .partner-info-box {
+	flex: 0 0 78%;
+}
+
+.partner-card .partner-box .partner-info-box .calculator-result-info .calculator-result-box .result-price .name,
+.partner-card .partner-box .partner-info-box .calculator-result-info .calculator-result-box .result-info-price .name,
+.partner-card .partner-box .partner-info-box .calculator-result-info .calculator-result-box .result-info-day .name {
+	flex: 0 0 30%;
+	font-size: 14px;
+}
+
+.partner-card .partner-box .partner-info-box .calculator-result-info .calculator-result-box .result-price .value,
+.partner-card .partner-box .partner-info-box .calculator-result-info .calculator-result-box .result-info-price .value,
+.partner-card .partner-box .partner-info-box .calculator-result-info .calculator-result-box .result-info-day .value {
+	font-size: 16px;
+}
+
+.partner-card .partner-box .partner-info-box .calculator-result-info .bonus-box {
+	height: 72px;
+}
+
+.partner-card .partner-box .partner-info-box .calculator-result-info .bonus-box p {
+	font-size: 14px;
+}
+
+.partner-card .partner-box .partner-info-box .calculator-result-info .bonus-box p strong {
+	font-size: 28px;
+}
+
+.partner-card .partner-box .partner-info-box .partner-info .partner-info-item {
+	flex: 0 0 auto;
+	padding-left: 40px;
+}
+
+.partner-card .partner-box .partner-btn-box {
+	flex: 0 0 100%;
+	margin-top: 30px;
+}
+
+.partner-card .partner-box .partner-btn-box .btn {
+	width: 150px;
+	margin: 0;
+	margin-left: auto;
+}
+
+.partner-card .btn-toggle-info {
+	width: 150px;
+	left: 30px;
+	top: 205px;
+}
+
+}
+
+@media (max-width: 767px) {
+
+.header .logo {
+	margin-right: auto;
+}
+
+.header .logo p {
+	font-size: 34px;
+}
+
+.header .slogan {
+	font-size: 18px;
+}
+
+.calculator-box {
+	margin-bottom: 30px;
+}
+
+.calculator-content {
+	width: 100%;
+	margin: 50px auto 0 auto;
+	padding: 15px;
+}
+
+.calculator-content .calculator-slider-price {
+	margin-bottom: 80px;
+}
+
+.calculator-content .calculator-slider-price .calculator-slider-info,
+.calculator-content .calculator-slider-day .calculator-slider-info {
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.calculator-content .calculator-slider-price .calculator-slider-info label,
+.calculator-content .calculator-slider-day .calculator-slider-info label {
+	flex: 0 0 100%;
+}
+
+.calculator-content .calculator-slider-price .calculator-slider-info input,
+.calculator-content .calculator-slider-day .calculator-slider-info input {
+	text-align: left;
+}
+
+.calculator-content .calculator-slider-price .calculator-slider-info .min-price,
+.calculator-content .calculator-slider-price .calculator-slider-info .max-price,
+.calculator-content .calculator-slider-price .calculator-slider-info .min-day,
+.calculator-content .calculator-slider-price .calculator-slider-info .max-day,
+.calculator-content .calculator-slider-day .calculator-slider-info .min-price,
+.calculator-content .calculator-slider-day .calculator-slider-info .max-price,
+.calculator-content .calculator-slider-day .calculator-slider-info .min-day,
+.calculator-content .calculator-slider-day .calculator-slider-info .max-day {
+	position: absolute;
+	bottom: -37px;
+	font-size: 15px;
+	line-height: 14px;
+	color: #ffad00;
+	font-weight: 700;
+}
+
+.calculator-content .slider-scroll {
+	width: 100%;
+	margin: 30px auto;
+}
+
+.partner-card {
+	padding: 30px 15px 30px 15px;
+}
+
+.partner-card .partner-box {
+	flex-direction: column;
+}
+
+.partner-card .partner-box .partner-title-box {
+	width: 50%;
+	min-height: 80px;
+	margin-bottom: 20px;
+}
+
+.partner-card .partner-box .partner-info-box {
+	flex: 0 0 auto;
+}
+
+.partner-card .partner-box .partner-info-box .calculator-result-info .calculator-result-box {
+	flex: 0 0 100%;
+}
+
+.partner-card .partner-box .partner-info-box .calculator-result-info .calculator-result-box .result-price .name,
+.partner-card .partner-box .partner-info-box .calculator-result-info .calculator-result-box .result-info-price .name,
+.partner-card .partner-box .partner-info-box .calculator-result-info .calculator-result-box .result-info-day .name {
+	flex: 0 0 37%;
+	font-size: 13px;
+}
+
+.partner-card .partner-box .partner-info-box .calculator-result-info .calculator-result-box .result-price .value,
+.partner-card .partner-box .partner-info-box .calculator-result-info .calculator-result-box .result-info-price .value,
+.partner-card .partner-box .partner-info-box .calculator-result-info .calculator-result-box .result-info-day .value {
+	font-size: 14px;
+}
+
+.partner-card .partner-box .partner-info-box .calculator-result-info .bonus-box {
+	width: 40%;
+	height: 72px;
+	position: absolute;
+	top: 30px;
+	right: 15px;
+}
+
+.partner-card .partner-box .partner-info-box .partner-info .partner-info-item {
+	flex: 0 0 auto;
+	padding-left: 0;
+	text-align: center;
+}
+
+.partner-card .partner-box .partner-info-box .partner-info .partner-info-item::before {
+	position: relative;
+}
+
+.partner-card .partner-box .partner-info-box .partner-info .partner-info-item span {
+	font-size: 10px;
+}
+
+.partner-card .partner-box .partner-info-box .partner-info .partner-info-item p {
+	font-size: 12px;
+}
+
+.partner-card .partner-box .partner-btn-box {
+	flex: 0 0 100%;
+	margin-top: 0;
+}
+
+.partner-card .partner-box .partner-btn-box .btn {
+	width: 150px;
+	margin: 0;
+	margin: auto;
+}
+
+.partner-card .btn-toggle-info {
+	width: 150px;
+	position: relative;
+	left: 0;
+	top: 0;
+	margin: auto;
+}
+
+.partner-card .partner-toggle-box .partner-main-info {
+	padding: 30px 0 0 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	margin-top: 30px;
+}
+
+.partner-card .partner-toggle-box .partner-main-info p {
+	margin: 0;
+	font-size: 14px;
+}
+
+}
 

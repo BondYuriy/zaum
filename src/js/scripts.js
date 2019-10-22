@@ -7,10 +7,36 @@ $(document).ready(function() {
       .toggleClass("show");
   });
 
+  /* */
+
+  $("#partner").waypoint(
+    function() {
+      $(".to-top").addClass("visible");
+    },
+    { offset: 100 }
+  );
+
+  $("#hello").waypoint(
+    function() {
+      $(".to-top").removeClass("visible");
+    },
+    { offset: -5 }
+  );
+
+  $("#toTop").click(function() {
+    $("html, body").animate(
+      {
+        scrollTop: $("#hello").offset().top - 0
+      },
+      1000
+    );
+    return false;
+  });
+
   /* calculator */
   $(function() {
     $("#slider-price").slider({
-      value: 1500,
+      value: 2500,
       min: 500,
       max: 10000,
       step: 50,
@@ -27,7 +53,7 @@ $(document).ready(function() {
     $("#slider-day").slider({
       value: 20,
       min: 1,
-      max: 180,
+      max: 30,
       step: 1,
       slide: function(event, ui) {
         $("#amount-day").val(ui.value);
@@ -43,7 +69,7 @@ const resultCreditPrice = document.querySelectorAll(".js-result-credit-price");
 const resultCreditDay = document.querySelectorAll(".js-result-credit-day");
 const creditPrice = document.querySelectorAll(".js-credit-price");
 
-let resultChoicePrice = 1500;
+let resultChoicePrice = 2500;
 let resultChoiceDay = 20;
 
 getDate(resultChoiceDay);

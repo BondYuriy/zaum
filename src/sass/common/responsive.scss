@@ -1,1 +1,253 @@
-/* === heeader responsive === */
+/* heeader responsive */
+
+/* partner-card responsive */
+@media (max-width: 1199px) {
+  .partner-card {
+    & .partner-box {
+      & .partner-title-box {
+        flex: 0 0 15%;
+
+        & h3 {
+          font-size: 22px;
+        }
+      }
+
+      & .partner-info-box {
+        flex: 0 0 65%;
+      }
+    }
+
+    & .btn-toggle-info {
+      width: 148px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .calculator-content {
+    width: 80%;
+  }
+
+  .partner-card {
+    & .partner-box {
+      & .partner-title-box {
+        flex: 0 0 20%;
+      }
+
+      & .partner-info-box {
+        flex: 0 0 78%;
+
+        & .calculator-result-info {
+          & .calculator-result-box {
+            & .result-price,
+            .result-info-price,
+            .result-info-day {
+              & .name {
+                flex: 0 0 30%;
+                font-size: 14px;
+              }
+
+              & .value {
+                font-size: 16px;
+              }
+            }
+          }
+
+          & .bonus-box {
+            height: 72px;
+
+            & p {
+              font-size: 14px;
+
+              & strong {
+                font-size: 28px;
+              }
+            }
+          }
+        }
+
+        & .partner-info {
+          & .partner-info-item {
+            flex: 0 0 auto;
+            padding-left: 40px;
+          }
+        }
+      }
+
+      .partner-btn-box {
+        flex: 0 0 100%;
+        margin-top: 30px;
+
+        & .btn {
+          width: 150px;
+          margin: 0;
+          margin-left: auto;
+        }
+      }
+    }
+
+    & .btn-toggle-info {
+      width: 150px;
+      left: 30px;
+      top: 205px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    & .logo {
+      margin-right: auto;
+
+      & p {
+        font-size: 34px;
+      }
+    }
+
+    & .slogan {
+      font-size: 18px;
+    }
+  }
+
+  .calculator-box {
+    margin-bottom: 30px;
+  }
+
+  .calculator-content {
+    width: 100%;
+    margin: 50px auto 0 auto;
+    padding: 15px;
+
+    & .calculator-slider-price {
+      margin-bottom: 80px;
+    }
+
+    & .calculator-slider-price .calculator-slider-info,
+    .calculator-slider-day .calculator-slider-info {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      & label {
+        flex: 0 0 100%;
+      }
+
+      & input {
+        text-align: left;
+      }
+
+      & .min-price,
+      .max-price,
+      .min-day,
+      .max-day {
+        position: absolute;
+        bottom: -37px;
+        font-size: 15px;
+        line-height: 14px;
+        color: $orange-color;
+        font-weight: 700;
+      }
+    }
+
+    & .slider-scroll {
+      width: 100%;
+      margin: 30px auto;
+    }
+  }
+
+  .partner-card {
+    padding: 30px 15px 30px 15px;
+
+    & .partner-box {
+      flex-direction: column;
+
+      & .partner-title-box {
+        width: 50%;
+        min-height: 80px;
+        margin-bottom: 20px;
+      }
+
+      & .partner-info-box {
+        flex: 0 0 auto;
+
+        & .calculator-result-info {
+          & .calculator-result-box {
+            flex: 0 0 100%;
+
+            & .result-price,
+            .result-info-price,
+            .result-info-day {
+              & .name {
+                flex: 0 0 37%;
+                font-size: 13px;
+              }
+
+              & .value {
+                font-size: 14px;
+              }
+            }
+          }
+
+          & .bonus-box {
+            width: 40%;
+            height: 72px;
+            position: absolute;
+            top: 30px;
+            right: 15px;
+          }
+        }
+
+        & .partner-info {
+          & .partner-info-item {
+            flex: 0 0 auto;
+            padding-left: 0;
+            text-align: center;
+
+            &::before {
+              position: relative;
+            }
+
+            & span {
+              font-size: 10px;
+            }
+
+            & p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      .partner-btn-box {
+        flex: 0 0 100%;
+        margin-top: 0;
+
+        & .btn {
+          width: 150px;
+          margin: 0;
+          margin: auto;
+        }
+      }
+    }
+
+    & .btn-toggle-info {
+      width: 150px;
+      position: relative;
+      left: 0;
+      top: 0;
+      margin: auto;
+    }
+
+    & .partner-toggle-box {
+      & .partner-main-info {
+        padding: 30px 0 0 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        margin-top: 30px;
+
+        & p {
+          margin: 0;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

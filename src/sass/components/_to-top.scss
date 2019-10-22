@@ -1,0 +1,34 @@
+.to-top {
+  border: 3px solid $gray-light-color;
+  width: 46px;
+  height: 46px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  opacity: 0;
+  transition: all 0.8s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & svg {
+    display: block;
+    width: 30px;
+    height: 30px;
+    fill: $gray-light-color;
+  }
+}
+
+.to-top:hover {
+  border: 3px solid $green-color;
+
+  & svg {
+    fill: $green-color;
+  }
+}
+
+.visible {
+  opacity: 1;
+}

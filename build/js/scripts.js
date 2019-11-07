@@ -37,8 +37,8 @@ $(document).ready(function() {
   $(function() {
     $("#slider-price").slider({
       value: 2500,
-      min: 500,
-      max: 10000,
+      min: 400,
+      max: 15000,
       step: 50,
       slide: function(event, ui) {
         $("#amount-price").val(ui.value);

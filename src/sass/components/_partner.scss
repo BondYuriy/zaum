@@ -154,12 +154,17 @@
       & p {
         margin: 0;
         font-size: 14px;
+
+        & a {
+          color: #231f20;
+          font-weight: 700;
+        }
       }
     }
   }
 
   & .show {
-    max-height: 200px;
+    max-height: 250px;
   }
 
   &:hover {
